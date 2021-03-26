@@ -1,4 +1,4 @@
-# ExTestGit
+# ExTestGit(기성훈)
 ---
 #### board 2가지 버전이 있습니다 
 
