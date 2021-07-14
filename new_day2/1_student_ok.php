@@ -1,0 +1,33 @@
+<?php
+    $hakbun = $_POST['hakbun'];
+    $name   = $_POST['name'];
+    $kor    = $_POST['kor'];
+    $math   = $_POST['math'];
+    $eng    = $_POST['eng'];
+
+    $tot = $kor + $math + $eng; // 총점
+    $avg = $tot / 3;    // 평균
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 성적 프로그램</title>
+</head>
+<body>
+    <h2>
+    <?php
+        echo "<h3>".$name."님의 성적표</h3>";
+    ?></h2>
+    <p>학번 : <?=$hakbun?></p>
+    <p>이름 : <?=$name?></p>
+    <p>국어점수 : <?=$kor?>점</p>
+    <p>수학점수 : <?=$math?>점</p>
+    <p>영어점수 : <?=$eng?>점</p>
+    <p>총점 : <?=$tot?>점</p>
+    <p>평균 : <?=$avg?>점</p>
+    
+</body>
+</html>
